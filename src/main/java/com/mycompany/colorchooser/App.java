@@ -8,16 +8,20 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+//Github repo link: https://github.com/BoomEAE/ColorChooserApp.git
+
 /**
  * JavaFX App
+ * @author Eric
  */
+
 public class App extends Application {
 
     private static Scene scene;
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("primary"), 640, 480);
+        scene = new Scene(loadFXML("ColorChooser"), Integer.MIN_VALUE, Integer.MIN_VALUE);
         stage.setScene(scene);
         stage.show();
     }
